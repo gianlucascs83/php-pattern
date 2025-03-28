@@ -1,0 +1,10 @@
+services:
+  php-apache:
+    ports:
+      - "80:80"
+    build: "."
+    volumes:
+      - ./src:/var/www/html/
+      - ./apache2.conf:/etc/apache2/apache2.conf
+volumes:
+  src:
