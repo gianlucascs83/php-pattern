@@ -12,6 +12,7 @@ $subtotal = 120;
 $shipment = new Shipment($productsInCart, $postalCode);
 $shipment->shippingStrategy = new $shippingCourier();
 $total = $shipment->shippingCost + $subtotal;
+
 echo <<<RES
     Subtotal: € {$subtotal} <br>
     Shipping: € {$shipment->shippingCost} <br>

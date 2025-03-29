@@ -1,7 +1,7 @@
 <?php
 class FedEx implements ShipmentInterface
 {
-    public function price(array $products, int $postalCode): int
+    public function calculateCost(array $products, int $postalCode): int
     {
         return 21;
     }

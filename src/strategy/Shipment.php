@@ -12,6 +12,6 @@ class Shipment
     }
 
     public int $shippingCost {
-        get => $this->shippingStrategy->price($this->products, $this->postalCode);
+        get => $this->shippingStrategy->calculateCost($this->products, $this->postalCode);
     }
 }
