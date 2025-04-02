@@ -9,6 +9,7 @@ class Shipment
 
     public ShipmentInterface $shippingStrategy {
         set => $this->shippingStrategy = $value;
+        //set => $value; - anche così va bene e la proprietà è anche leggibile
     }
 
     public int $shippingCost {
